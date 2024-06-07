@@ -2,6 +2,7 @@ import view from './view.js';
 import controller from './notifications-controller.js';
 import translate from './translate-service.js';
 import config from './config.js';
+import { isConstructorDeclaration } from 'typescript';
 
 // Obtain a reference to the platformClient object
 const platformClient = require('platformClient');
@@ -332,6 +333,10 @@ document.getElementById('toggle-search')
 const urlParams = new URLSearchParams(window.location.search);
 currentConversationId = urlParams.get('conversationid');
 genesysCloudLanguage = urlParams.get('language');
+
+//PruebaDeConcepto
+console.log(currentConversationId);
+console.log(genesysCloudLanguage);
 
 client.setPersistSettings(true, 'chat-translator');
 client.setEnvironment(config.genesysCloud.region);
