@@ -22,6 +22,10 @@ let translationData = null;
 let genesysCloudLanguage = 'en-us';
 let translateKey = '';
 
+//Pruebas de Concepto
+console.log("agentName");
+
+
 /**
  * Callback function for 'message' and 'typing-indicator' events.
  * 
