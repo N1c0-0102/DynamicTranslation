@@ -23,7 +23,7 @@ let genesysCloudLanguage = 'en-us';
 let translateKey = '';
 
 //Pruebas de Concepto
-console.log("agentName");
+console.log(agentName);
 
 
 /**
